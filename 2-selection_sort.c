@@ -24,9 +24,12 @@ void selection_sort(int *array, size_t size)
 			}
 
 		}
+		if (min_idx != i)
+		{
+			swap(&array[min_idx], &array[i]);
+			print_array(array, size);
+		}
 
-		swap(&array[min_idx], &array[i]);
-		print_array(array, size);
 
 	}
 
